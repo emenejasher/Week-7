@@ -1,16 +1,16 @@
 const express = require("express");
-const userRoutes = require("./routes/userRoutes");
+const route = require("./routes/route");
 const dotenv = require("dotenv");
 
-// configure dotenv for environment variable
+
 dotenv.config({ path: "./config.env" });
 const app = express();
 
-// Body Parser
+
 app.use(express.json());
 
-// Mounting
-app.use("/api/v1/user", userRoutes);
+
+app.use("/api/v1/user", route);
 // app.use("/api/v1/document", userRoutes);
 // app.use("/api/v1/student", userRoutes);
 
