@@ -1,4 +1,4 @@
-let package = [
+let product = [
     {
         id: 1,
         name: "HP 15 Laptop",
@@ -70,4 +70,4 @@ let package = [
         price: "#156,970"
     }];
     
-    module.exports = package ;
+    module.exports = product ;
